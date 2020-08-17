@@ -1,0 +1,42 @@
+body {
+  background: #ff6d24; }
+
+.navbar-dark {
+  background: #4e413b; }
+
+.card {
+  margin-top: 20px; }
+  .card .card-header {
+    background: #4e413b;
+    color: floralwhite; }
+  .card .card-body {
+    background: #4e413b; }
+    .card .card-body p {
+      color: floralwhite; }
+
+.media {
+  margin: 10px 0;
+  background: #857671; }
+  .media .media-body {
+    color: floralwhite;
+    margin: 30px 0; }
+  .media img {
+    margin: 5px; }
+
+footer {
+  background: #4e413b;
+  color: #ff6d24; }
+
+.modal .modal-header {
+  background: #4e413b;
+  color: floralwhite; }
+  .modal .modal-header .close {
+    color: floralwhite; }
+
+.modal .modal-body {
+  background: #857671;
+  color: floralwhite; }
+
+.myform .card {
+  background: #4e413b;
+  color: floralwhite; }

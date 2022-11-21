@@ -1,0 +1,5 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target" : { "namespace": "android_app", "package_name": "com.sliit.deeplinksampleproject",
+                 "sha256_cert_fingerprints": ["80:A8:5F:3C:80:4C:EA:7B:90:67:44:BF:1C:11:6B:CA:23:78:E0:36:BB:22:72:07:52:67:F5:25:8F:D8:A5:63"] }
+  }]

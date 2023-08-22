@@ -1,18 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const homeLink = document.getElementById("homeLink");
-    const aboutLink = document.getElementById("aboutLink");
-    const landingPage = document.getElementById("landingPage");
-    const aboutPage = document.getElementById("aboutPage");
+    const endDate = new Date().getTime() + (10 * 24 * 60 * 60 * 1000); // 10 days from now
 
-    homeLink.addEventListener("click", (e) => {
-        e.preventDefault();
-        landingPage.classList.remove("hidden");
-        aboutPage.classList.add("hidden");
-    });
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const timeLeft = endDate - now;
 
-    aboutLink.addEventListener("click", (e) => {
-        e.preventDefault();
-        landingPage.classList.add("hidden");
-        aboutPage.classList.remove("hidden");
-    });
+        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+        document.getElementById("days").textContent = String(days).padStart(2, '0');
+        document.getElementById("hours").textContent = String(hours).padStart(2, '0');
+        document.getElementById("minutes").textContent = String(minutes).padStart(2, '0');
+        document.getElementById("seconds").textContent = String(seconds).padStart(2, '0');
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
 });

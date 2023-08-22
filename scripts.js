@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const endDate = new Date().getTime() + (10 * 24 * 60 * 60 * 1000); // 10 days from now
+    const endDate = new Date(2023, 8, 1, 0, 0, 0, 0);
 
     function updateCountdown() {
         const now = new Date().getTime();
